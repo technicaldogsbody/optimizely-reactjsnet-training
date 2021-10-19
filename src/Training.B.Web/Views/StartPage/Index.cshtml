@@ -1,0 +1,12 @@
+﻿@model Training.B.Requests.Pages.StartPage.StartPageResponse
+@using EPiServer.Web.Mvc.Html
+@using React.AspNet
+@using Training.B.Core.Constants
+
+<div @Html.EditAttributes(Model.HeroName)>
+    @Html.PropertyFor(response => response.Hero)
+</div>
+@Html.React(ReactComponentNames.Intro, new { Model.IntroTitle, Model.IntroTitleName, Model.IntroText, Model.IntroTextName })
+<div @Html.EditAttributes(Model.ContentAreaName)>
+    @Html.PropertyFor(response => response.ContentArea)
+</div>
