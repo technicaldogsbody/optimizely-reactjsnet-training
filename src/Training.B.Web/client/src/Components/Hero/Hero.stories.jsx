@@ -1,6 +1,5 @@
 ﻿import React from 'react';
 import Hero from "./Hero";
-import Background from "../../Assets/dept.jpeg";
 
 export default {
     title: 'Components/Hero',
@@ -13,7 +12,7 @@ const Template = (args) => <Hero {...args} />;
 //👇 Each story then reuses that template
 export const Primary = Template.bind({});
 Primary.args = {
-    backgroundUrl: Background,
+    backgroundUrl: 'https://picsum.photos/2000/1500',
     heading: 'Lorem ipsum',
     body: 'Lorem ipsum dolor sit amet.'
 };

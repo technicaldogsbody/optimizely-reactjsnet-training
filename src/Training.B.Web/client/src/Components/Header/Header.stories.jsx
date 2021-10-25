@@ -1,6 +1,5 @@
 ﻿import React from 'react';
 import Header from "./Header";
-import Logo from "../../Assets/react.png"
 
 export default {
     title: 'Components/Header',
@@ -14,6 +13,6 @@ const Template = (args) => <Header {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-    logoUrl: Logo,
+    logoUrl: 'https://picsum.photos/200/100',
     strapline: 'I am a strapline'
 };
