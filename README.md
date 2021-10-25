@@ -16,5 +16,4 @@
 * From the src/Training.B.Web folder
     * <code>dotnet-episerver create-cms-database Training.B.Web.csproj -S localhost -U sa -P epiR0cks</code> - Note, if you're already running Docker SQL, use your own username and password
     * <code>dotnet-episerver add-admin-user Training.B.Web.csproj -u dept -p P4ssw0rd! -e user@email.com -c EPiServerDB</code>
-    * <code>dotnet build</code>
-    * <code>dotnet run</code>
+    * Run through Visual Studio *OR* run <code>dotnet build</code> then <code>dotnet run</code>
