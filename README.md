@@ -14,7 +14,7 @@
     * Grab the docker compose file from [https://bit.ly/docker-compose-dbs](https://bit.ly/docker-compose-dbs) 
     * In CMD/Powershell/Terminal run <code>`docker compose up`</code>
 * From the src folder
-    * <code>dotnet-episerver create-cms-database Training.B.csproj -S localhost -U sa -P epiR0cks</code>
-    * <code>dotnet-episerver add-admin-user Training.B.csproj -u dept -p P4ssw0rd! -e user@email.com -c EPiServerDB</code>
+    * <code>dotnet-episerver create-cms-database Training.B.Web.csproj -S localhost -U sa -P epiR0cks</code> - Note, if you're already running Docker SQL, use your own username and password
+    * <code>dotnet-episerver add-admin-user Training.B.Web.csproj -u dept -p P4ssw0rd! -e user@email.com -c EPiServerDB</code>
     * <code>dotnet build</code>
     * <code>dotnet run</code>
